@@ -50,6 +50,45 @@ function createTD(content) {
 }</pre>
             </div>
         </div>
+        <div class="box-code">
+            <pre>function createTableArr(title, content) {
+    let table = document.createElement('table');
+    var trTitle = createTitle(title);
+    table.appendChild(trTitle);
+
+    content.forEach(element => {
+        var valueContent = createContent(element);
+        table.appendChild(valueContent);
+    })
+    document.body.appendChild(table);
+}</pre>
+        </div>
+        <div class="box-code">
+            <pre>function listConvertArr(list) {
+    let arr = [];
+    for (let i = 0; i < list.length; i++) {
+        let childArr = [];
+        for (let j = 0; j < list[i].length; j++) {
+            childArr.push(list[j][i]);
+        }
+        arr.push(childArr);
+    }
+
+    return arr;
+}</pre>
+        </div>
+        <div class="box-code">
+            <pre>let title = ['name', 'type', 'index'];
+    let nameData = ['nhan', 'loc', 'yen'];
+    let typeData = ['A', 'A', 'B'];
+    let indexData = ['1', '2', '3'];
+    let content = [];
+    content.push(nameData);
+    content.push(typeData);
+    content.push(indexData);
+    
+    createTableArr(title, listConvertArr(content));</pre>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
