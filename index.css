@@ -5,12 +5,13 @@
 
 body {
     margin: 3vw;
+    background-color: rgba(63, 60, 60, 0.103);
+    color: rgba(0, 0, 0, 0.856);
 }
 
 .codes {
-    margin: auto;
+    grid-gap: 2vw;
     columns: 3;
-    width: 100%;
 }
 
 .codes .box-code {
@@ -18,13 +19,13 @@ body {
 }
 
 .codes .box-code pre {
+    margin: .5vw;
     display: inline-block;
-    margin: auto;
     width: 100%;
-    padding: .3vw;
-    border: 2px solid black;
+    padding: 0.3vw;
     border-radius: 5px;
     overflow: auto;
+    background-color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 720px) {

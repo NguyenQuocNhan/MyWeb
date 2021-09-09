@@ -27,7 +27,6 @@ function createTH(content) {
 function createTD(content) {
     let TD = document.createElement('td');
     TD.innerHTML = content;
-
     return TD;
 }
 </pre>
@@ -55,7 +54,6 @@ function createTD(content) {
     let table = document.createElement('table');
     var trTitle = createTitle(title);
     table.appendChild(trTitle);
-
     content.forEach(element => {
         var valueContent = createContent(element);
         table.appendChild(valueContent);
@@ -73,12 +71,12 @@ function createTD(content) {
         }
         arr.push(childArr);
     }
-
     return arr;
 }</pre>
         </div>
         <div class="box-code">
-            <pre>let title = ['name', 'type', 'index'];
+            <pre>
+let title = ['name', 'type', 'index'];
 let nameData = ['nhan', 'loc', 'yen'];
 let typeData = ['A', 'A', 'B'];
 let indexData = ['1', '2', '3'];
@@ -86,7 +84,6 @@ let content = [];
 content.push(nameData);
 content.push(typeData);
 content.push(indexData);
-
 createTableArr(title, listConvertArr(content));</pre>
         </div>
     </div>
