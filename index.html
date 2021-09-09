@@ -40,7 +40,15 @@ function createTD(content) {
     return title;
 }</pre>
             </div>
-
+            <div class="box-code">
+                <pre>function createContent(list) {
+    var content = document.createElement('tr');
+    list.forEach(element => {
+        content.appendChild(createTD(element));
+    })
+    return content;
+}</pre>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
