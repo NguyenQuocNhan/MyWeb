@@ -3,12 +3,32 @@
     margin: 0;
 }
 
-#video {
-    width: 100%;
-    text-align: center;
+body {
+    margin: 3vw;
 }
 
-#video iframe {
+.codes {
+    margin: auto;
+    columns: 3;
     width: 100%;
-    height: 480px;
+}
+
+.codes .box-code {
+    width: 100%;
+}
+
+.codes .box-code pre {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    padding: .3vw;
+    border: 4px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
+}
+
+@media only screen and (max-width: 720px) {
+    .codes {
+        columns: 1;
+    }
 }

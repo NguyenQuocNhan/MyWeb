@@ -11,15 +11,38 @@
 
 <body>
     <h1>My Web</h1>
+    <h3>DOM table</h3>
+    <div class="codes">
+        <div class="box-code">
+            <pre>
+function createTH(content) {
+    let TH = document.createElement('th');
+    TH.innerHTML = content;
+    return TH;
+}
+</pre>
+        </div>
+        <div class="box-code">
+            <pre>
+function createTD(content) {
+    let TD = document.createElement('td');
+    TD.innerHTML = content;
 
-    <div id="video">
-        <h3>video</h3>
-        <iframe src="https://www.youtube.com/embed/DM_y9tDICEI?list=RDDM_y9tDICEI" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+    return TD;
+}
+</pre>
+            <div class="box-code">
+                <pre>function createTitle(list) {
+    var title = document.createElement('tr');
+    list.forEach(element => {
+        title.appendChild(createTH(element));
+    })
+    return title;
+}</pre>
+            </div>
+
+        </div>
     </div>
-
     <script src="index.js"></script>
 </body>
 
