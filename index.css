@@ -19,10 +19,12 @@ body {
 }
 
 .codes .box-code pre {
-    margin: 2.5vw;
+    margin-top: 2.5vw;
     display: inline-block;
     width: 100%;
-    padding: 2vw;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     border-radius: 5px;
     overflow: auto;
     background-color: rgb(255, 255, 255);
