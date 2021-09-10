@@ -11,7 +11,7 @@ body {
 
 .codes {
     grid-gap: 5vw;
-    columns: 3;
+    columns: 2;
 }
 
 .codes .box-code {
@@ -19,12 +19,10 @@ body {
 }
 
 .codes .box-code pre {
-    margin-top: 2.5vw;
+    margin: 2.5vw;
     display: inline-block;
     width: 100%;
-    padding-left: 2vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding: 2vw;
     border-radius: 5px;
     overflow: auto;
     background-color: rgb(255, 255, 255);
